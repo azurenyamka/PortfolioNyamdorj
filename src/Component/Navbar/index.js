@@ -21,7 +21,7 @@ const NavbarMenu = () => {
               <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
             </Nav>
-            <Nav>
+            <Nav className={styles.menu}>
               <Nav.Link href="#Hero">Home</Nav.Link>
               <Nav.Link href="#About">About</Nav.Link>
               <Nav.Link href="#Skills">Skills</Nav.Link>
