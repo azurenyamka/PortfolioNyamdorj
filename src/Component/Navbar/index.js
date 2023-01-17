@@ -7,26 +7,27 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Link} from 'react-router-dom';
 const NavbarMenu = () => {
   return (
     <div className={styles.container}>
       <motion.div 
       initial={{y: -250}}
-      animate={{y:0}}
+      animate={{y:-70}}
       transition={{duration: 2}}
-      ><Navbar bg="light" expand="lg" fixed='top'>
+      ><Navbar bg="dark" expand="lg" fixed='top'>
         <Container>
-          <Navbar.Brand href="#home"><SocialIcon network='github'/> Nyamdorj</Navbar.Brand>
+          <Navbar.Brand><SocialIcon network='github'bgColor='rgb(255, 123, 0)'/> <Link to='/'>Nyamdorj</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
             </Nav>
             <Nav className={styles.menu}>
-              <Nav.Link href="#Hero">Home</Nav.Link>
-              <Nav.Link href="#About">About</Nav.Link>
-              <Nav.Link href="#Skills">Skills</Nav.Link>
-              <Nav.Link href="#Project">Project</Nav.Link>
-              <Nav.Link href="#Contact">Contact</Nav.Link>
+              <Nav.Link><Link to='/'>Home</Link></Nav.Link>
+              <Nav.Link><Link to='/about'>About</Link></Nav.Link>
+              <Nav.Link><Link to='/skills'>Skills</Link></Nav.Link>
+              <Nav.Link><Link to='/project'>Project</Link></Nav.Link>
+              <Nav.Link><Link to='/contact'>Contact</Link></Nav.Link>
             </Nav>
          </Navbar.Collapse>
          </Container>

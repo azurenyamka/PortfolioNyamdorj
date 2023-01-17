@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.About {
+    background-color: black;
+    height: 100vh;
+}
+.Header {
+    height: 100px;
+    // background-color:white;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 50px;
+        font-weight:100;
+    }
+}
+.aquared{
+    color:rgb(255, 123, 0);
+}
+.Section {
+    display: flex;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-top: 150px;
+}
+.SectionLeft    {
+    flex: 1;
+    img{
+        border-radius: 30px;
+        filter: grayscale(100%);
+        &:hover{
+            filter: none;
+        }
+    }
+}

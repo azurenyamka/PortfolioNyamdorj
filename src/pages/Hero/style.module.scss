@@ -9,8 +9,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 300px;
     padding-right: 100px;
+    margin-top: 70px;
 }
 .containerItem{
     flex: 1;
@@ -31,7 +32,7 @@
   
 }
 .containerItemImg{
-    padding-left: 200px;
+    padding-left: 150px;
 
 }
 .containerItemImg img{
@@ -40,9 +41,18 @@
     border-radius:50%;
 }
 .aboutMe    {
-    width: 200px;
+    display: flex;
+    padding-top: 5px;
+    padding-left: 20px;
+    align-items: center;
+    width: 150px;
     border: white 3px;
-    background-color: transparent;
+    background-color: aqua;
     color: white;
-    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px aqua;
+    margin-bottom: 15px;
+    h6{
+        font-size: 20px;
+    }
 }

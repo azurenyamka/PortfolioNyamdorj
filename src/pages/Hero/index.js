@@ -29,7 +29,7 @@ const Hero = () => {
         <h1>Hi Bitches,</h1>
         <h1>I'm Nyamdorj <span>Ochirsukh</span></h1>
         <h3>I'm into <span><Typewriter words={['Web Development.','Gaming.','Streaming.','Balling.']} loop={false}/> </span></h3>
-        <div><button className={styles.aboutMe}>About me</button></div>
+        <div><button className={styles.aboutMe}><h6>About Me</h6></button></div>
         <SocialIcon network='instagram' bgColor='black' fgColor='aqua' className='App-logo'/>
         <SocialIcon network='facebook' bgColor='black' fgColor='aqua' className='App-logo'/>
         <SocialIcon network='discord' bgColor='black' fgColor='aqua' className='App-logo'/>
